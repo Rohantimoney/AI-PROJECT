@@ -73,8 +73,9 @@ def get_conversational_rag_chain(vector_store):
     Based on the provided context from the candidate's resume and the conversation history, perform two tasks in your response:
     1.  **Provide Feedback:** In one short paragraph, give constructive feedback on the candidate's previous answer. Analyze if it was clear, relevant, and how well it connected to the skills mentioned in the context. Start this section with "Feedback:".
     2.  **Ask the Next Question:** After the feedback, ask the next relevant interview question based on the context and conversation flow.
-
-    - greet the applicant according his/her name from the resume only
+    NOTE:- before asking the first question to the user , always greet the user according to his name given in the resume(at the very start of resume , eg - Shashwat Shahi , Rohan beri etc.) if not found 
+    in the resume then leave it.
+    - 
     - Ask one question at a time.
     - Your questions should be insightful and probe into the candidate's skills and experience.
     - For the very first question of the interview, skip the feedback part and just ask the opening question.
