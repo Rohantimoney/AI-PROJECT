@@ -34,7 +34,7 @@ def get_vectorstore_from_files(pdf_files):
     if not pdf_files:
         return None
     
-    with st.spinner("Processing documents... This may take a moment."):
+    with st.spinner("Processing document... This may take a moment."):
         documents = []
         for pdf_file in pdf_files:
             # PyPDFLoader needs a file path, so we save the uploaded file to a temporary file
