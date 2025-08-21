@@ -3,3 +3,5 @@
 
 # Virtual environment
 .venv/
+# Ignore secrets
+app/.streamlit/secrets.toml
