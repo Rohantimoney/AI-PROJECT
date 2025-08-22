@@ -30,3 +30,6 @@ Thumbs.db
 *.toc
 *.fls
 *.fdb_latexmk
+
+# Secret Keys
+firebase_key.json
